@@ -58,12 +58,25 @@ When you see something like `<leader>0` in the table below - it means you have
 to press `,`, then `0` on your keyboard. You can change this in vimrc, changing
 `let mapleader=","` to your preference.
 
+### General
+
 |Function|Hotkey|
 |--------|------|
-|Switch to next tab|gt|
-|Switch to previous tab|gT|
+|Open .vimrc|`<leader>v`|
 |Toggle [Gundo](http://bitbucket.org/sjl/gundo.vim) window|`<leader>1`|
 |Toggle [Paste mode](http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste)|`<leader>2`|
 |Toggle [TagList](http://vim-taglist.sourceforge.net/) window|`<leader>3`|
 |Toggle [Tagbar](http://majutsushi.github.com/tagbar/) window|`<leader>4`|
 |Toggle [NERDtree](http://github.com/scrooloose/nerdtree) window|`<leader>5`|
+
+### Tabs/Buffers/Windows and such
+
+First, read this wonderful blogpost:
+https://joshldavis.com/2014/04/05/vim-tab-madness-buffers-vs-tabs/
+No, really - go and read it now, it's short and pretty useful.
+Now when you're done - we can go on.
+I'm using [CtrlP](https://github.com/kien/ctrlp.vim) for buffers navigation.
+You just hit `<leader>bb` - and list of all buffers appears at the bottom of the
+screen. You can start typing a buffer name, and the list will be narrowed to
+what you type. Pressing `<leader>bm` opens a list of Most Recently Used files.
+Again, typing a filename will narrow down the list. Very convenient.
