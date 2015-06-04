@@ -2,8 +2,17 @@ Vim on steroids
 ===============
 
 My Vim config, based on
-[Netherdrake's .vimrc](https://github.com/Netherdrake/Dotfiles/blob/master/common/.vimrc)
-You might want to check Johns' [VimTricks videos](https://www.youtube.com/user/MinuteVimTricks) on YouTube
+[Netherdrake's
+.vimrc](https://github.com/Netherdrake/Dotfiles/blob/master/common/.vimrc).
+You might want to check Johns' [VimTricks
+videos](https://www.youtube.com/user/MinuteVimTricks) on YouTube as well.
+
+The idea behind putting this to GitHub is that there're tons of cool configs
+here and there. They all do have one tiny issue though - no, or little
+documentation. Whoever wants to use those have to take his time to read through
+all the plugins docs to find out what that config actually does. My goal is to
+document mine in as much details as possible, so it becomes clear about what a
+potential user can expect if he or she decides to use it.
 
 Installation
 ------------
