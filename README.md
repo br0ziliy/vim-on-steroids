@@ -24,6 +24,6 @@ Usage
 =====
 
 |Function|Hotkey|
------------------
+|--------|------|
 |Switch to next tab|gt|
 |Switch to previous tab|gT|
