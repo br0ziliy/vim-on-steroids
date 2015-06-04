@@ -3,6 +3,7 @@ Vim on steroids
 
 My Vim config, based on
 [Netherdrake's .vimrc](https://github.com/Netherdrake/Dotfiles/blob/master/common/.vimrc)
+You might want to check Johns' [VimTricks videos](https://www.youtube.com/user/MinuteVimTricks) on YouTube
 
 Installation
 ------------
@@ -18,6 +19,26 @@ pushd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
 popd
 ```
+
+### Note on fonts
+
+If you did not use [powerline]() before, you'll need to also install patched
+[powerline fonts](https://github.com/bling/vim-airline#integrating-with-powerline-fonts)
+for proper airline display:
+
+```
+mkdir -p ~/.config/fontconfig/conf.d/
+mkdir -p ~/.fonts
+wget https://github.com/powerline/powerline/raw/develop/font/PowerlineSymbols.otf
+wget https://github.com/powerline/powerline/raw/develop/font/10-powerline-symbols.conf
+mv PowerlineSymbols.otf ~/.fonts/
+mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+fc-cache -vf ~/.fonts/
+```
+
+If airline still looks weird - try checking the [official
+powerline-fonts](https://powerline.readthedocs.org/en/master/installation/linux.html#fonts-installation)
+installation instructions.
 
 Usage
 -----
