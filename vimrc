@@ -115,7 +115,7 @@ set undolevels=100
 let mapleader=","
 
 " show trailing whitespaces
-set nolist
+set list
 set listchars=tab:▸\ ,trail:¬,nbsp:.,extends:❯,precedes:❮
 
 " syntax highlighting
