@@ -22,7 +22,8 @@ popd
 
 ### Note on fonts
 
-If you did not use [powerline]() before, you'll need to also install patched
+If you did not use
+[powerline](https://powerline.readthedocs.org/en/master/overview.html) before, you'll need to also install patched
 [powerline fonts](https://github.com/bling/vim-airline#integrating-with-powerline-fonts)
 for proper airline display:
 
