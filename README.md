@@ -1,11 +1,11 @@
 Vim on steroids
----------------
+===============
 
 My Vim config, based on
 [Netherdrake's .vimrc](https://github.com/Netherdrake/Dotfiles/blob/master/common/.vimrc)
 
 Installation
-============
+------------
 
 ```bash
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
@@ -20,9 +20,19 @@ popd
 ```
 
 Usage
-=====
+-----
+
+`leader` key is configured as `,` in this config.
+When you see something like `<leader>0` in the table below - it means you have
+to press `,`, then `0` on your keyboard. You can change this in vimrc, changing
+`let mapleader=","` to your preference.
 
 |Function|Hotkey|
 |--------|------|
 |Switch to next tab|gt|
 |Switch to previous tab|gT|
+|Toggle [Gundo](http://bitbucket.org/sjl/gundo.vim) window|`<leader>1`|
+|Toggle [Paste mode](http://vim.wikia.com/wiki/Toggle_auto-indenting_for_code_paste)|`<leader>2`|
+|Toggle [TagList](http://vim-taglist.sourceforge.net/) window|`<leader>3`|
+|Toggle [Tagbar](http://majutsushi.github.com/tagbar/) window|`<leader>4`|
+|Toggle [NERDtree](http://github.com/scrooloose/nerdtree) window|`<leader>5`|
