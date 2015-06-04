@@ -1,7 +1,9 @@
 Vim on steroids
 ---------------
 
-My Vim config, based on (https://github.com/Netherdrake/Dotfiles/blob/master/common/.vimrc)[Nethrdrake's .vimrc]
+My Vim config, based on
+[https://github.com/Netherdrake/Dotfiles/blob/master/common/.vimrc](Nethrdrake's
+.vimrc)
 
 Installation
 ============
