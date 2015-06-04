@@ -115,15 +115,8 @@ set undolevels=100
 let mapleader=","
 
 " show trailing whitespaces
-set list
+set nolist
 set listchars=tab:▸\ ,trail:¬,nbsp:.,extends:❯,precedes:❮
-autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
-augroup ListChars2
-    au!
-    autocmd filetype * set listchars+=tab:\ \ 
-    autocmd ColorScheme * hi! link SpecialKey Normal
-augroup END
-": match ExtraWhitespace /\s\+$/
 
 " syntax highlighting
 syntax on
