@@ -196,8 +196,8 @@ nmap <leader>f <Plug>(easymotion-f2)
 nmap <leader>F <Plug>(easymotion-F2)
 
 " open vimrc
-nnoremap <leader>v :e  ~/.vimrc<CR>
-nnoremap <leader>V :tabnew  ~/.vimrc<CR>
+nnoremap <leader>v :e  ~/.vim/.vimrc<CR>
+nnoremap <leader>V :tabnew  ~/.vim/.vimrc<CR>
 
 " reload all open buffers
 nnoremap <leader>Ra :tabdo exec "windo e!"
