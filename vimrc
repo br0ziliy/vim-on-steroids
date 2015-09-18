@@ -61,6 +61,9 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
+" TaskWarrior
+Plugin 'farseer90718/vim-taskwarrior'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -277,6 +280,9 @@ function! LangRunner()
 endfunction
 
 au BufEnter * call LangRunner()
+
+" TaskWarrior
+let g:task_rc_override = 'rc.defaultwidth=0 rc.defaultheight=0'
 
 """"""""""""""""""""""""""""""""
 "
