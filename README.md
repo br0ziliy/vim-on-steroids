@@ -80,3 +80,18 @@ You just hit `<leader>bb` - and list of all buffers appears at the bottom of the
 screen. You can start typing a buffer name, and the list will be narrowed to
 what you type. Pressing `<leader>bm` opens a list of Most Recently Used files.
 Again, typing a filename will narrow down the list. Very convenient.
+
+### Misc. plugins usage
+
+#### TaskWarrior
+
+I'm using [TaskWarrior](http://taskwarrior.org/) to track my tasks and time
+spend on each task. There're tons of frontends for TaskWarrior, but since Vim -
+is the thing I see the most in front of me during the day, I decided to use
+[vim-taskwarrior](https://github.com/blindFS/vim-taskwarrior) plugin.
+Execute `:TW` to see your task list. I use the official [vim-taskwarrior keybindings](https://github.com/blindFS/vim-taskwarrior#default-map)
+to operate my task list. The only customization I had to do to my `.vimrc` is this:
+```
+let g:task_rc_override = 'rc.defaultwidth=0 rc.defaultheight=0'
+```
+so vim-taskwarrior uses the full display width to show task descriptions.
