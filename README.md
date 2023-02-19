@@ -81,6 +81,7 @@ screen. You can start typing a buffer name, and the list will be narrowed to
 what you type. Pressing `<leader>bm` opens a list of Most Recently Used files.
 Again, typing a filename will narrow down the list. Very convenient.
 
+<<<<<<< HEAD
 ### Misc. plugins usage
 
 #### TaskWarrior
@@ -95,3 +96,13 @@ to operate my task list. The only customization I had to do to my `.vimrc` is th
 let g:task_rc_override = 'rc.defaultwidth=0 rc.defaultheight=0'
 ```
 so vim-taskwarrior uses the full display width to show task descriptions.
+### Navigation in a file
+
+My setup includes [EasyMotion](https://github.com/easymotion/vim-easymotion)
+plugin, which allows you to optimize how you navigate the text.
+Just press `<Leader>f`, and then enter a letter you're looking for - all
+matching letters on the current visible text will be highlighted. `<Leader>F`
+does the same, only it searches "backwards" relative to current cursor position.
+It's very powerful plugin, go and read [official
+documentation](https://github.com/easymotion/vim-easymotion#usage-example-for-the-base-features),
+it has very good examples of what you can do.

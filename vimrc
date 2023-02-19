@@ -12,12 +12,13 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 " core plugins
-Plugin 'flazz/vim-colorschemes'
+" Plugin 'flazz/vim-colorschemes'
 Plugin 'kien/ctrlp.vim'
 
 " vim main plugins
 Plugin 'sjl/gundo.vim'
-Plugin 'bling/vim-airline'
+" Plugin 'bling/vim-airline'
+" Plugin 'vim-airline/vim-airline-themes'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'scrooloose/syntastic.git'
 Plugin 'vim-scripts/tComment'
@@ -42,7 +43,7 @@ Plugin 'rhysd/clever-f.vim'
 " togglable panels
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-vinegar'
-Plugin 'vim-scripts/taglist.vim'
+" Plugin 'vim-scripts/taglist.vim'
 Plugin 'majutsushi/tagbar'
 
 " language vundles
@@ -75,9 +76,9 @@ filetype plugin indent on    " required
 """"""""""""""""""""""""""""""""
 set expandtab
 set smarttab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set autoindent
 set ruler
 set hidden
@@ -123,8 +124,8 @@ set listchars=tab:▸\ ,trail:¬,nbsp:.,extends:❯,precedes:❮
 
 " syntax highlighting
 syntax on
-set background=dark
-colorscheme solarized
+" set background=dark
+" colorscheme solarized
 
 " session management
 let g:session_directory = "~/.vim/session"
@@ -230,19 +231,23 @@ vnoremap <leader>S :%S /
 let g:clever_f_show_prompt = 1
 let g:clever_f_across_no_line = 1
 
+" powerline
+
+let g:powerline_pycmd = "py3"
+
 " airline
-if !exists("g:airline_symbols")
-  let g:airline_symbols = {}
-endif
-let g:airline_theme="zenburn"
-let g:airline_powerline_fonts=1
-let g:airline#extensions#branch#empty_message  =  "no .git"
-let g:airline#extensions#whitespace#enabled    =  0
-let g:airline#extensions#syntastic#enabled     =  1
-let g:airline#extensions#tabline#enabled       =  1
-let g:airline#extensions#tabline#tab_nr_type   =  1 " tab number
-let g:airline#extensions#tabline#fnamecollapse =  1 " /a/m/model.rb
-let g:airline#extensions#hunks#non_zero_only   =  1 " git gutter
+"""if !exists("g:airline_symbols")
+"""  let g:airline_symbols = {}
+"""endif
+"""let g:airline_theme="zenburn"
+"""let g:airline_powerline_fonts=1
+"""let g:airline#extensions#branch#empty_message  =  "no .git"
+"""let g:airline#extensions#whitespace#enabled    =  0
+"""let g:airline#extensions#syntastic#enabled     =  1
+"""let g:airline#extensions#tabline#enabled       =  1
+"""let g:airline#extensions#tabline#tab_nr_type   =  1 " tab number
+"""let g:airline#extensions#tabline#fnamecollapse =  1 " /a/m/model.rb
+"""let g:airline#extensions#hunks#non_zero_only   =  1 " git gutter
 
 " YouCompleteMe
 let g:ycm_filetype_blacklist = {}
